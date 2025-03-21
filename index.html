@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sathvika Kolisetty - Data Engineering Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="dark-mode-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <nav class="animate-nav">
+        <div class="nav-brand">Sathvika Kolisetty</div>
+        <div class="hamburger"><i class="fas fa-bars"></i></div>
+        <ul class="nav-menu">
+
+
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="avatar">👩‍💻</div>
+                <p class="greeting">Hello world, my name is</p>
+                <h1 class="name"><span>&lt;</span>Sathvika<span>&gt;</span></h1>
+            </div>
+            <div class="hero-right">
+                <p class="intro">
+                    I’m Sathvika Kolisetty — a Data Engineer, Cloud Engineer, and Cloud Solutions Architect crafting scalable cloud ecosystems with <span id="typed-text"></span>.
+                </p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/sathvikakolisetty22" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/satvikakolisetty" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/KolisettySathvi" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="hero-buttons">
+                    <a href="./assets/Sathvika_Kolisetty_Resume.pdf" download class="btn hero-btn" id="resume-btn">Resume</a>
+                    <a href="mailto:sathvika.kolisetty09@gmail.com" class="btn email-btn" id="email-btn">Email Me</a>
+                </div>
+            </div>
+        </div>
+        <canvas id="particles" class="hero-particles"></canvas>
+    </section>
+
+    <section id="about" class="animate-section">
+        <h2>Get to Know Sathvika</h2>
+        <div class="about-container">
+            <img src="assets/hero2.png" alt="Sathvika Kolisetty Profile" class="profile-image">
+            <div class="about-text animate-stagger">
+                <p>I’m <b>Sathvika Kolisetty</b>, a passionate and driven <b>Data Engineer & Cloud Solutions Architect</b> with over <b>4 years of experience</b> building robust, scalable data systems on AWS and GCP. I excel at turning complex challenges into streamlined, high-performance solutions—whether it’s optimizing real-time streaming pipelines, designing resilient architectures, or migrating massive datasets to the cloud with precision and efficiency.</p>
+                <br>
+                <p>I love making data work smarter. From developing efficient<b> ETL workflows</b> to enhancing cloud infrastructure, my focus is on transforming raw data into meaningful, actionable insights. I’m skilled in Apache Spark, Kafka, Snowflake, dbt, Databricks, and modern cloud technologies, delivering innovative solutions that empower data-driven decision-making and business growth.</p>
+                <br>
+                <p>What drives me is the power of data to create impactful solutions. I’m passionate about <b>continuous learning, innovation, and collaboration,</b> always pushing the boundaries of what’s possible. Let’s connect and build something extraordinary!</p>
+                <div class="social-links animate-stagger">
+                    <a href="mailto:sathvika.kolisetty09@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://linkedin.com/in/sathvikakolisetty22" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/satvikakolisetty" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="animate-section">
+        <h2>Projects</h2>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item animate-stagger">
+                    <h3>Real-Time Streaming Pipeline</h3>
+                    <p><strong>Overview:</strong> Engineered a high-performance streaming system for real-time analytics.</p>
+                    <p><strong>Technologies:</strong> AWS Kinesis, Kafka, Flink, Lambda, FastAPI, QuickSight</p>
+                    <p><strong>Impact:</strong> Reduced latency by 60%, improved decision-making by 30%, and enabled real-time APIs.</p>
+                    <a href="#" class="project-link" data-modal="modal1">Learn More</a>
+                </div>
+                <div class="carousel-item animate-stagger">
+                    <h3>Cloud Data Lake & Migration</h3>
+                    <p><strong>Overview:</strong> Led a secure, petabyte-scale data lake migration to AWS.</p>
+                    <p><strong>Technologies:</strong> AWS S3, Glue, Lake Formation, Snowflake, DMS, Redshift</p>
+                    <p><strong>Impact:</strong> Achieved zero-downtime migration, 45% faster queries, and 25% cost reduction.</p>
+                    <a href="#" class="project-link" data-modal="modal2">Learn More</a>
+                </div>
+                <div class="carousel-item animate-stagger">
+                    <h3>GCP Data Ecosystem & AI Analytics</h3>
+                    <p><strong>Overview:</strong> Designed a cost-efficient GCP pipeline with AI-driven insights.</p>
+                    <p><strong>Technologies:</strong> GCP Dataflow, BigQuery, Vertex AI, Pub/Sub, Looker, Cloud Composer</p>
+                    <p><strong>Impact:</strong> Cut processing times by 40%, reduced costs by 30%, and boosted forecast accuracy by 20%.</p>
+                    <a href="#" class="project-link" data-modal="modal3">Learn More</a>
+                </div>
+            </div>
+            <button class="carousel-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <!-- Updated Modals -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <span class="close">×</span>
+                <h3>Real-Time Streaming Pipeline</h3>
+                <p><strong>Overview:</strong> For a financial services company, I designed and implemented a real-time streaming pipeline to ingest, process, and analyze transaction data with minimal latency, enabling near-instant analytics and actionable insights for business teams.</p>
+                <p><strong>Technologies Used:</strong> AWS Kinesis was used for ingesting streaming data from multiple sources, Apache Kafka for reliable message queuing, and Apache Flink for event-driven processing. I developed FastAPI-based microservices, deployed via AWS API Gateway, to enable real-time data access, handling over 1 million records per day with sub-second response times. AWS Lambda functions facilitated serverless event handling, such as triggering alerts for specific transaction patterns. AWS QuickSight was used to build interactive dashboards for visualizing transaction trends and anomalies. Monitoring and alerting were configured using AWS CloudWatch, Prometheus, and Grafana to ensure system reliability.</p>
+                <p><strong>Challenges:</strong> Ensuring data consistency across distributed systems was a key challenge, as Kafka and Kinesis occasionally faced message duplication. I implemented deduplication logic in Flink and used Kafka’s idempotent producer to mitigate this. High throughput also increased AWS expenses, so I introduced Auto Scaling for Lambda and Kinesis, along with S3 lifecycle policies for archival, reducing costs by 20%.</p>
+                <p><strong>Impact:</strong> The pipeline reduced data processing latency by 60%, from 5 seconds to under 2 seconds, enabling near-instant analytics. The QuickSight dashboards improved decision-making speed by 30%. The FastAPI microservices provided real-time data access to downstream applications, handling 1M+ records daily with 40% faster response times. Cost optimization efforts saved 20% on cloud expenses, and monitoring reduced incident response time by 40%.</p>
+            </div>
+        </div>
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <span class="close">×</span>
+                <h3>Cloud Data Lake & Migration</h3>
+                <p><strong>Overview:</strong> For a global consulting firm, I led the migration of petabyte-scale datasets from on-premises databases to a centralized AWS data lake, enabling advanced analytics and ensuring compliance with security standards.</p>
+                <p><strong>Technologies Used:</strong> AWS S3 served as the storage layer for the data lake, with AWS Glue handling ETL processes and schema evolution via the AWS Glue Data Catalog. AWS Lake Formation was used for governance and access control. AWS DMS (Database Migration Service) facilitated the migration of data from on-premises Oracle and SQL Server databases to S3 and Snowflake, using CDC (Change Data Capture) for incremental syncs. Snowflake and Redshift were optimized for analytical workloads with materialized views, partitioning, and result caching. AWS IAM and KMS enforced fine-grained access control and encryption for SOC 2 compliance. Apache Airflow automated ETL workflows, and monitoring was set up with AWS CloudWatch and Datadog.</p>
+                <p><strong>Challenges:</strong> Ensuring zero downtime during migration required careful planning, using DMS with CDC to sync data incrementally and automated scripts for consistency validation. Initial query costs on Redshift and Snowflake were high, so I fine-tuned queries with partitioning and materialized views, reducing compute costs by 25%. Strict access controls for SOC 2 compliance were implemented using IAM roles and KMS encryption.</p>
+                <p><strong>Impact:</strong> The migration was completed with zero downtime, ensuring uninterrupted operations. Query performance improved by 45% due to optimization in Redshift and Snowflake. The centralized data lake enabled advanced analytics, improving reporting efficiency by 50%. Cost savings of 25% were achieved through query optimization and lifecycle policies. Automated ETL workflows with Airflow and Glue reduced manual efforts by 90%.</p>
+            </div>
+        </div>
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <span class="close">×</span>
+                <h3>GCP Data Ecosystem & AI Analytics</h3>
+                <p><strong>Overview:</strong> For a technology client, I designed a cost-efficient data ecosystem on GCP to enable real-time analytics and AI-driven forecasting, providing actionable insights for business planning.</p>
+                <p><strong>Technologies Used:</strong> GCP Dataflow handled scalable data processing, ingesting data via GCP Pub/Sub for event-driven streaming. BigQuery served as the data warehouse, optimized for large-scale analytics. Vertex AI was integrated to build and deploy machine learning models for predictive analytics, focusing on demand forecasting. Cloud Composer orchestrated and automated the pipeline, ensuring reliability. Looker dashboards visualized real-time insights and forecasting results. Cost-saving measures included preemptible VMs in Dataflow and BigQuery’s flat-rate pricing. GCP Cloud Build was used for CI/CD, and monitoring was set up with Cloud Logging.</p>
+                <p><strong>Challenges:</strong> Integrating Vertex AI required extensive data preprocessing, which I handled using Dataflow to clean and transform data. Dataflow and BigQuery expenses initially spiked, so I optimized with preemptible VMs and flat-rate pricing, reducing costs by 30%. Pipeline reliability was ensured with Cloud Composer automation and Cloud Logging, reducing failures by 40%.</p>
+                <p><strong>Impact:</strong> The pipeline reduced data processing times by 40%, from over 10 minutes to under 6 minutes, enabling real-time analytics. Vertex AI models improved forecasting accuracy by 20%. Looker dashboards enhanced decision-making efficiency. Cost savings of 30% were achieved, and the automated pipeline reduced manual efforts by 50%.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="animate-section">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card animate-stagger">
+                <h4>Data Processing & ETL</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag"><i class="fas fa-stream"></i> Kafka</span>
+                    <span class="skill-tag"><i class="fas fa-bolt"></i> Spark</span>
+                    <span class="skill-tag"><i class="fas fa-wind"></i> Airflow</span>
+                    <span class="skill-tag"><i class="fab fa-aws"></i> AWS Glue</span>
+                    <span class="skill-tag"><i class="fab fa-google"></i> GCP Dataflow</span>
+                    <span class="skill-tag"><i class="fas fa-code-branch"></i> Flink</span>
+                    <span class="skill-tag"><i class="fab fa-aws"></i> AWS Data Pipeline</span>
+                    <span class="skill-tag"><i class="fab fa-aws"></i> AWS EMR</span>
+                </div>
+            </div>
+            <div class="skill-card animate-stagger">
+                <h4>Databases & Warehousing</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag"><i class="fab fa-aws"></i> Redshift</span>
+                    <span class="skill-tag"><i class="fab fa-google"></i> BigQuery</span>
+                    <span class="skill-tag"><i class="fas fa-snowflake"></i> Snowflake</span>
+                    <span class="skill-tag"><i class="fab fa-aws"></i> DynamoDB</span>
+                    <span class="skill-tag"><i class="fab fa-aws"></i> AWS S3</span>
+                    <span class="skill-tag"><i class="fas fa-database"></i> PostgreSQL</span>
+                </div>
+            </div>
+            <div class="skill-card animate-stagger">
+                <h4>Cloud Ecosystem: AWS</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag"><i class="fab fa-aws"></i> AWS Lambda</span>
+                    <span class="skill-tag"><i class="fab fa-aws"></i> AWS Kinesis</span>
+                    <span class="skill-tag"><i class="fab fa-aws"></i> AWS Step Functions</span>
+                    <span class="skill-tag"><i class="fab fa-aws"></i> AWS QuickSight</span>
+                    <span class="skill-tag"><i class="fab fa-aws"></i> AWS IAM</span>
+                    <span class="skill-tag"><i class="fab fa-aws"></i> AWS API Gateway</span>
+                </div>
+            </div>
+            <div class="skill-card animate-stagger">
+                <h4>Cloud Ecosystem: GCP</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag"><i class="fab fa-google"></i> GCP BigQuery</span>
+                    <span class="skill-tag"><i class="fab fa-google"></i> GCP Dataflow</span>
+                    <span class="skill-tag"><i class="fab fa-google"></i> GCP Pub/Sub</span>
+                    <span class="skill-tag"><i class="fab fa-google"></i> GCP Cloud Composer</span>
+                    <span class="skill-tag"><i class="fab fa-google"></i> GCP Vertex AI</span>
+                </div>
+            </div>
+            <div class="skill-card animate-stagger">
+                <h4>Programming & DevOps</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+                    <span class="skill-tag"><i class="fas fa-database"></i> SQL</span>
+                    <span class="skill-tag"><i class="fas fa-cogs"></i> Terraform</span>
+                    <span class="skill-tag"><i class="fab fa-docker"></i> Docker</span>
+                    <span class="skill-tag"><i class="fas fa-cubes"></i> Kubernetes</span>
+                    <span class="skill-tag"><i class="fas fa-code-branch"></i> Jenkins</span>
+                    <span class="skill-tag"><i class="fab fa-aws"></i> AWS CloudFormation</span>
+                    <span class="skill-tag"><i class="fab fa-gitlab"></i> GitLab CI/CD</span>
+                    <span class="skill-tag"><i class="fab fa-aws"></i> AWS CodePipeline</span>
+                    <span class="skill-tag"><i class="fab fa-google"></i> GCP Cloud Build</span>
+                </div>
+            </div>
+            <div class="skill-card animate-stagger">
+                <h4>Data Visualization</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag"><i class="fab fa-aws"></i> QuickSight</span>
+                    <span class="skill-tag"><i class="fas fa-chart-bar"></i> Tableau</span>
+                    <span class="skill-tag"><i class="fas fa-chart-pie"></i> Power BI</span>
+                    <span class="skill-tag"><i class="fab fa-google"></i> GCP Looker</span>
+                </div>
+            </div>
+            <div class="skill-card animate-stagger">
+                <h4>AI & Machine Learning</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag"><i class="fab fa-aws"></i> AWS SageMaker</span>
+                    <span class="skill-tag"><i class="fab fa-google"></i> GCP Vertex AI</span>
+                    <span class="skill-tag"><i class="fas fa-robot"></i> Bedrock</span>
+                </div>
+            </div>
+            <div class="skill-card animate-stagger">
+                <h4>Big Data Technologies</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag"><i class="fas fa-server"></i> HDFS</span>
+                    <span class="skill-tag"><i class="fas fa-cogs"></i> MapReduce</span>
+                    <span class="skill-tag"><i class="fas fa-exchange-alt"></i> Sqoop</span>
+                    <span class="skill-tag"><i class="fas fa-stream"></i> Flume</span>
+                </div>
+            </div>
+            <div class="skill-card animate-stagger">
+                <h4>APIs & Web Frameworks</h4>
+                <div class="skill-tags">
+                    <span class="skill-tag"><i class="fas fa-code"></i> Flask</span>
+                    <span class="skill-tag"><i class="fas fa-book"></i> Swagger UI</span>
+                    <span class="skill-tag"><i class="fas fa-globe"></i> OpenAPI</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="animate-section">
+        <h2>Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item animate-stagger">
+                <div class="timeline-content">
+                    <h3>Cloud Data Engineer - Swift</h3>
+                    <p><strong>May 2023 - Present</strong></p>
+                    <ul>
+                        <li><i class="fab fa-aws"></i> Designed and implemented high-performance AWS data pipelines for real-time and batch processing.</li>
+                        <li><i class="fas fa-server"></i> Leveraged serverless and containerized architectures to enhance scalability and reduce costs.</li>
+                        <li><i class="fas fa-stream"></i> Built streaming pipelines with Kinesis and Kafka, cutting latency by 60%.</li>
+                        <li><i class="fas fa-tools"></i> Automated infrastructure with Terraform, reducing deployment time by 60%.</li>
+                        <li><i class="fas fa-code-branch"></i> Developed CI/CD pipelines with CodePipeline, speeding releases by 50%.</li>
+                        <li><i class="fas fa-chart-line"></i> Created QuickSight dashboards, improving decision-making by 30%.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item animate-stagger">
+                <div class="timeline-content">
+                    <h3>Data Engineer - WTW</h3>
+                    <p><strong>Apr 2020 - Jul 2022</strong></p>
+                    <ul>
+                        <li><i class="fab fa-aws"></i> Developed a centralized AWS data lake for large-scale data management.</li>
+                        <li><i class="fas fa-cogs"></i> Optimized ETL workflows to ensure high availability and performance for real-time analytics.</li>
+                        <li><i class="fas fa-database"></i> Migrated petabyte-scale data to S3 and Snowflake with zero downtime.</li>
+                        <li><i class="fas fa-tachometer-alt"></i> Optimized Redshift queries, reducing costs by 25%.</li>
+                        <li><i class="fas fa-wind"></i> Automated ETL with Airflow and Glue, boosting efficiency by 50%.</li>
+                        <li><i class="fas fa-lock"></i> Enforced IAM and KMS security for GDPR/SOC 2 compliance.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="animate-section">
+        <h2>Certifications</h2>
+        <div class="certifications-grid">
+            <div class="certification-card animate-stagger">
+                <h4>AWS Certified Data Engineer – Associate</h4>
+                <div class="certification-details">
+                    <a href="https://www.credly.com/badges/2125bf84-3a7e-4766-83e6-06dd3680e05e/public_url" target="_blank">
+                        <i class="fas fa-certificate"></i> View Badge
+                    </a>
+                </div>
+            </div>
+            <div class="certification-card animate-stagger">
+                <h4>AWS Certified Solutions Architect – Professional</h4>
+                <div class="certification-details">
+                    <a href="https://www.credly.com/badges/02cc9b12-f066-4230-847b-2bf3a593aa84/public_url" target="_blank">
+                        <i class="fas fa-certificate"></i> View Badge
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="animate-section">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <div class="form-group animate-stagger">
+                <input type="text" id="name" placeholder="Name" required>
+                <span class="error-msg" id="name-error"></span>
+            </div>
+            <div class="form-group animate-stagger">
+                <input type="email" id="email" placeholder="Email" required>
+                <span class="error-msg" id="email-error"></span>
+            </div>
+            <div class="form-group animate-stagger">
+                <textarea id="message" placeholder="Message" required></textarea>
+                <span class="error-msg" id="message-error"></span>
+            </div>
+            <button type="submit" class="btn submit-btn animate-stagger">Send Message</button>
+            <div id="form-response" class="form-response"></div>
+        </form>
+        <div class="social-links animate-stagger">
+            <a href="mailto:sathvika.kolisetty09@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+19374009988"><i class="fas fa-phone"></i></a>
+            <a href="https://linkedin.com/in/sathvikakolisetty22" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/KolisettySathvi" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/satvikakolisetty" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Sathvika Kolisetty. Engineered with Data & Precision.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" onerror="console.error('Failed to load Typed.js from CDN');"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -76,6 +76,32 @@
         <h2>Projects</h2>
         <div class="carousel">
             <div class="carousel-inner">
+                <!-- New Project: Scalable Clickstream Data Pipeline -->
+            <div class="carousel-item animate-stagger">
+                <h3>Scalable Clickstream Data Pipeline</h3>
+                <p><strong>Overview:</strong> Built a robust pipeline for ingesting and analyzing massive volumes of user behavior events in real-time.</p>
+                <p><strong>Technologies:</strong> Kafka, Spark Structured Streaming, Delta Lake, Apache Hudi, Hive, Trino, dbt, Airflow</p>
+                <p><strong>Impact:</strong> Enabled unified batch/stream access, 50% faster data discovery, and increased pipeline reliability with dbt tests.</p>
+                <a href="#" class="project-link" data-modal="modal4">Learn More</a>
+            </div>
+
+            <!-- New Project: Healthcare Data Lakehouse -->
+            <div class="carousel-item animate-stagger">
+                <h3>Healthcare Data Lakehouse with Real-Time Analytics</h3>
+                <p><strong>Overview:</strong> Developed a HIPAA-compliant Azure data lakehouse pipeline for real-time analytics on healthcare claims.</p>
+                <p><strong>Technologies:</strong> Azure Data Factory, Delta Lake, Synapse, Power BI, Azure ML, Terraform</p>
+                <p><strong>Impact:</strong> Achieved 87% predictive accuracy for readmissions and reduced dashboard latency by 40%.</p>
+                <a href="#" class="project-link" data-modal="modal5">Learn More</a>
+            </div>
+
+            <!-- New Project: Cross-Cloud GenAI Recommendation Engine -->
+            <div class="carousel-item animate-stagger">
+                <h3>Cross-Cloud GenAI Recommendation Engine</h3>
+                <p><strong>Overview:</strong> Built a real-time recommendation engine using AWS for ingestion and GCP for AI modeling.</p>
+                <p><strong>Technologies:</strong> AWS Kinesis, AWS Glue, Lambda, Snowflake, Vertex AI, FastAPI, Streamlit</p>
+                <p><strong>Impact:</strong> Improved recommendation accuracy by 30% and cut compute costs by 25% using optimized ELT.</p>
+                <a href="#" class="project-link" data-modal="modal6">Learn More</a>
+            </div>
                 <div class="carousel-item animate-stagger">
                     <h3>Real-Time Streaming Pipeline</h3>
                     <p><strong>Overview:</strong> Engineered a high-performance streaming system for real-time analytics.</p>
@@ -132,6 +158,38 @@
                 <p><strong>Impact:</strong> The pipeline reduced data processing times by 40%, from over 10 minutes to under 6 minutes, enabling real-time analytics. Vertex AI models improved forecasting accuracy by 20%. Looker dashboards enhanced decision-making efficiency. Cost savings of 30% were achieved, and the automated pipeline reduced manual efforts by 50%.</p>
             </div>
         </div>
+        <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h3>Scalable Clickstream Data Pipeline</h3>
+            <p><strong>Overview:</strong> Built for a retail analytics firm, I developed a real-time data pipeline that processes over 5 million clickstream events daily. The system supports both batch and streaming access by leveraging Delta Lake and Apache Hudi, allowing teams to run historical and real-time queries simultaneously.</p>
+            <p><strong>Technologies Used:</strong> Apache Kafka was used for ingestion, Apache Spark (Structured Streaming) for real-time processing, and AWS S3 for storage. Data was stored in both Delta and Hudi formats to support hybrid access. Hive Metastore integration enabled schema tracking, and Trino provided fast SQL-based access. dbt handled data quality and schema testing, orchestrated through Airflow DAGs on Databricks.</p>
+            <p><strong>Challenges:</strong> Managing schema evolution and consistency across formats was challenging. I implemented strict versioning and partition strategies and automated schema validation using dbt. Scaling Spark jobs to handle peak loads required tuning shuffle partitions and memory configurations.</p>
+            <p><strong>Impact:</strong> Reduced data discovery time by 50% through Trino+Hive integration. Increased data reliability via Airflow-monitored dbt tests. Enabled analytics teams to perform ad-hoc queries with latency under 3 seconds, improving insights turnaround.</p>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h3>Healthcare Data Lakehouse with Real-Time Analytics</h3>
+            <p><strong>Overview:</strong> For a healthcare analytics provider, I built a HIPAA-compliant Azure lakehouse pipeline that ingests and transforms patient claims data for real-time reporting and predictive modeling.</p>
+            <p><strong>Technologies Used:</strong> Azure Data Factory handled ingestion, Delta Lake stored transformed data, and Synapse served as the analytics engine. Predictive models were trained in Azure ML to detect high-risk readmissions. Power BI dashboards offered interactive visualizations. All resources were deployed and secured using Terraform.</p>
+            <p><strong>Challenges:</strong> Ensuring HIPAA compliance required encryption, access control, and auditing. I implemented row-level security in Power BI and ensured end-to-end encryption in transit and at rest. Real-time transformation logic was optimized using Delta's schema evolution and merge capabilities.</p>
+            <p><strong>Impact:</strong> Improved analytics speed by 40%, reduced dashboard load times by 35%, and achieved 87% model accuracy. Enabled business teams to identify at-risk patients proactively, reducing readmission costs.</p>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h3>Cross-Cloud GenAI Recommendation Engine</h3>
+            <p><strong>Overview:</strong> I developed a real-time recommendation engine leveraging AWS for ingestion and GCP for AI modeling. The system ingests behavior events via AWS Kinesis, transforms them using AWS Glue, and stores in Snowflake for centralized querying.</p>
+            <p><strong>Technologies Used:</strong> The inference engine was built using GCP Vertex AI, where behavioral embeddings were modeled using GenAI. FastAPI served the recommendation endpoint, and a Streamlit frontend was deployed for live demos. The system used partitioned Snowflake tables and materialized views to improve ELT performance.</p>
+            <p><strong>Challenges:</strong> Cross-cloud communication latency was optimized using asynchronous FastAPI calls and minimal payloads. Cost spikes in Snowflake were addressed by implementing clustering and query pruning strategies.</p>
+            <p><strong>Impact:</strong> Achieved 30% higher recommendation accuracy by using real-time GenAI features. Streamlined data pipelines reduced Snowflake compute costs by 25%. The live demo environment supported 1000+ concurrent requests with stable performance.</p>
+        </div>
+    </div>
     </section>
 
     <section id="skills" class="animate-section">

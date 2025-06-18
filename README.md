@@ -12,7 +12,7 @@ Built a real-time recommendation engine powered by generative AI. Ingested user 
 - Improved recommendation accuracy by 30 percent using fine-tuned embedding models
 - Reduced Snowflake compute costs by 25 percent using materialized views and partitioned storage
 
-[Source Code](#https://github.com/satvikakolisetty/genai-recommendation)
+[Source Code](https://github.com/satvikakolisetty/genai-recommendation)
 
 ---
 
@@ -24,7 +24,7 @@ Designed and implemented a HIPAA-compliant lakehouse architecture to ingest, sto
 - Deployed Azure ML models with 87 percent accuracy in predicting readmissions
 - Achieved 40 percent improvement in dashboard performance and 35 percent faster data loading
 
-[Source Code](#https://github.com/satvikakolisetty/healthcare-data-lakehouse)
+[Source Code](https://github.com/satvikakolisetty/healthcare-data-lakehouse)
 
 ---
 
